@@ -1,0 +1,23 @@
+/**
+ * @param {number} x
+ * @return {boolean}
+ */
+var x=2002;
+var isPalindrome =function(x)
+{
+    var result = 0;
+    while(x>0)
+    {
+        result=(result*10)+(x%10);
+        x=Math.floor(x/10);
+    }
+    
+    if(result==x)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+};
