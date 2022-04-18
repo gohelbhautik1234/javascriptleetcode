@@ -1,0 +1,22 @@
+/**
+ *Container With Most Water
+
+ */
+var maxArea = function(height) {
+    var l=0;
+    var len=height.length;
+    let r=len-1;
+    let area=0;
+    while(l<r)
+    {
+        area=Math.max(area,Math.min(height[l],height[r])*(r-l));
+        if(height[l]<height[r])
+        {
+            l+=1;
+        }
+        else
+        {
+            r-=1;
+        }
+    }
+};
