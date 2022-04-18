@@ -1,0 +1,27 @@
+/**
+ *  Longest Common Prefix
+ */
+function commonprefixutil(str1,str2)
+            {
+                let result="";
+                let n1=str1.length,n2=str2.length;
+                for(let i=0,j=0;i<=n1-1 && j<=n2-1; i++,j++)
+                {
+                    if(str1[i]!=str2[j])
+                    {
+                        break;
+                    }
+                    result+=str1[i];        
+                }
+                return (result);         
+            }
+var longestCommonPrefix = function(strs) {
+    let n= strs.length;
+    let prefix =strs[0];
+                for(let i=1;i<=n-1;i++)
+                {
+                    prefix=commonprefixutil(prefix,strs[i]);
+                }
+                return (prefix);
+    
+};
