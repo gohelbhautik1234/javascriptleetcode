@@ -1,0 +1,8 @@
+/**
+Length of Last Word
+ */
+var lengthOfLastWord = function(s) {
+        var ss = s.trim().split(" ");
+        return ss[ss.length - 1].length;
+
+};
