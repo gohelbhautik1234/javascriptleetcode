@@ -1,0 +1,21 @@
+var generate = function(numRows) 
+{
+    var a=[[1]];
+    if(numRows)
+    {
+        for(var i=1;i<numRows;i++)
+        {
+            a[i]=[];
+            for(var j=0;j<i+1;j++)
+            {
+                a[i][j]=(a[i-1][j] || 0)+(a[i-1][j-1] || 0 );
+            }
+        }
+        return a;
+    }
+    else
+    {
+        return [];
+    }
+    
+};
