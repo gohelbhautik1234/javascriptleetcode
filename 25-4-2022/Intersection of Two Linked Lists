@@ -1,0 +1,31 @@
+<script>
+            //debugger;
+            var intersectVal = 2, listA = [1,9,1,2,4], listB = [3,2,4];
+            var flag1,flag2;
+            for(var i=0;i<listA.length;i++)
+            {
+                if(listA[i]==intersectVal)
+                {
+                    flag1=1;
+                    break;
+                }
+            }
+
+            for(var i=0;i<listB.length;i++)
+            {
+                if(listB[i]==intersectVal)
+                {
+                    flag2=2;
+                    break;
+                }
+            }
+
+            if(flag1==1 && flag2==2)
+            {
+                console.log("intersecVal:"+intersectVal);
+            }
+            else
+            {
+                console.log("No intersection");
+            }
+    </script>
