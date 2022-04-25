@@ -1,0 +1,16 @@
+        <script>
+            //debugger;
+            var arr=[];
+            var root=[1,2,null,3];
+            var i=0;
+            while(i<root.length)
+            {
+                if(root[i]!==null)
+                {
+                    arr.push(root[i]);
+                }
+                i++;       
+            }
+
+            console.log(arr);
+        </script>
