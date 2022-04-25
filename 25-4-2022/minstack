@@ -1,0 +1,47 @@
+<script>
+            var arr=[];    
+                
+            class Minstack
+            {
+                S_push(val)
+                {
+                    arr.push(val);
+                }
+                S_pop()
+                {
+                    arr.pop();
+                }
+                Top()
+                {
+                    var Top=arr[0];
+                    for(var i=1;i<arr.length;i++)
+                    {
+                        if(Top<arr[i])
+                        {
+                            Top=arr[i];
+                        }
+                    }
+                    console.log("Top=",Top);
+                }
+                Min()
+                {
+                    var Min=arr[0];
+                    for(var i=1;i<arr.length;i++)
+                    {
+                        if(Min>arr[i])
+                        {
+                            Min=arr[i];
+                        }
+                    }
+                    console.log("Min=",Min);
+                }
+            }
+            var objms=new Minstack();
+            objms.S_push(-2);
+            objms.S_push(0);
+            objms.S_push(-3);
+            objms.S_pop();
+            objms.Top();
+            objms.S_pop();
+            objms.Min();
+      </script>
