@@ -1,0 +1,18 @@
+
+        <script>
+            debugger;
+            var head = [1,2];
+            var pos=0;
+            for(var i=0;i<head.length;i++)
+            {
+                if(i>=pos)
+                {
+                    if(head[i]==head[pos])
+                    {
+                        console.log(head[i]);
+                        head[pos+1];
+                        break;
+                    }
+                }
+            }
+        </script>
