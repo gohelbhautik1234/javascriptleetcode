@@ -1,0 +1,14 @@
+ <script>
+            var Head=[1,2,6,3,4,5,6];
+            var val=6;
+
+            for(var i=0;i<=Head.length;i++)
+            {
+                if(val==Head[i])
+                {
+                    Head.splice(i,1);
+                }
+            }
+
+            console.log(Head);
+        </script>
