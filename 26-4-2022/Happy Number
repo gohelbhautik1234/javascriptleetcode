@@ -1,0 +1,23 @@
+        <script>
+            var n=19;
+            function h_n(n)
+            {  // debugger;
+                var ans=0;
+                while(n>0)
+                {
+                    r=n%10;    
+                    ans+=r**2;    
+                    n=Math.floor(n/10);  
+                    console.log(ans);
+                }
+                if(ans!=1)
+                {
+                    h_n(ans);
+                }
+                else
+                {
+                    console.log("this number is happy number");
+                }
+            }
+            h_n(n);
+        </script>
