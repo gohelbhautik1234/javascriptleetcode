@@ -1,0 +1,7 @@
+181. Employees Earning More Than Their Managers
+1:- select emp1.name AS Employee from Employee emp1 where 
+    exists(select * from Employee emp2 where emp1.managerid=emp2.id and emp1.salary>emp2.salary);
+2:- select emp1.name AS Employee from Employee emp1 inner join Employee emp2 on emp1.managerid=emp2.id where 
+    emp1.salary>emp2.salary;
+182. Duplicate Emails
+1:- select distinct p1.email As Email from Person p1 where exists(select * from Person p2 group by p1.email having  p2.email=p1.email);
