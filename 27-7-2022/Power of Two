@@ -1,0 +1,40 @@
+
+var isPowerOfTwo = function(n) {
+            
+            var i=1;
+            var mul=2;
+            if(n==1 || n==2)
+            {
+                return true;
+            }
+            else
+            {
+                if(n%2==0)
+                {
+                    while(i)
+                    {
+                        mul*=2;
+                        if(mul==n)
+                        {
+                            return true;           
+                        
+                            break;
+                        }
+                        else
+                        {
+                            i++;
+                        }
+                        
+                        if(mul>n)
+                        {
+                            return false;
+                            break;
+                        }
+                    }
+                }
+                else
+                {
+                    return false;
+                }
+            }
+};
