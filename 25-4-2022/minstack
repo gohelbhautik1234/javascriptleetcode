@@ -5,7 +5,7 @@
             {
                 S_push(val)
                 {
-                    arr.push(val);
+                    arr.unshift(val);
                 }
                 S_pop()
                 {
@@ -40,8 +40,8 @@
             objms.S_push(-2);
             objms.S_push(0);
             objms.S_push(-3);
+            objms.Min();
             objms.S_pop();
             objms.Top();
-            objms.S_pop();
             objms.Min();
       </script>
